@@ -34,18 +34,48 @@
   --color-brand-light: #819b57;
 }
 /*Base*/
+* {
+  box-sizing: border-box;
+}
 body {
   color: var(--color-primary-dark);
   font-family: "poppins", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 address {
   font-style: normal;
 }
 ul {
   list-style-type: none;
+}
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.section {
+  padding: 48px 0;
+}
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 /*Button*/
 .button {
@@ -69,7 +99,12 @@ ul {
   color: var(--color-brand-light);
   font-weight: 600;
 }
+/*hero*/
+.hero-section {
+  padding: 272px 0;
+}
 .hero-title {
+  margin-bottom: 0;
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
@@ -98,6 +133,12 @@ ul {
   color: var(--color-brand-dark);
 }
 /*Tradition-section*/
+.traditions-title {
+  margin-bottom: 42px;
+}
+.traditions-section {
+  padding-top: 96px;
+}
 .tradition-text .brand {
   color: var(--color-brand-light);
   font-weight: 600;
@@ -106,18 +147,29 @@ ul {
   text-transform: uppercase;
 }
 /*chefs-section*/
-.chefs-title {
+.chef-title {
+  margin-bottom: 16px;
   font-size: 40px;
   font-weight: 600;
+}
+.chefs-title {
+  margin-bottom: 80px;
 }
 /*formats-section*/
 .format-title {
   font-size: 24px;
   font-weight: 600;
 }
+.formats-title {
+  margin-bottom: 80px;
+}
 .format-text {
   font-size: 14px;
   font-weight: 300;
+}
+/*contact-section*/
+.contact-title {
+  margin-bottom: 16px;
 }
 /*Footer*/
 .address-link {
