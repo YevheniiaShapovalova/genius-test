@@ -200,6 +200,7 @@ ul {
   border-radius: 16px;
   padding: 24px;
   width: 349px;
+  min-height: 444px;
 }
 .format-item {
   flex-basis: calc(100%-40px / 3);
